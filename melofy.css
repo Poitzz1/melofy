@@ -1,0 +1,269 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: white;
+  line-height: 1.6;
+
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1DB954;
+  padding: 1rem 2rem;
+ background: linear-gradient(145deg, #1db954, #191414);
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.hero {
+  padding: 5rem 2rem;
+  text-align: center;
+  
+ background: linear-gradient(145deg, #1db954, #191414);
+}
+.hero h1 {
+  font-size: 3rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.btn {
+  background: white;
+  color: #1DB954;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.btn:hover {
+  background: #e6e6e6;
+}
+
+.plans {
+  padding: 4rem 2rem;
+  text-align: center;
+
+}
+.plan-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.plan {
+  background: #181818;
+  padding: 2rem;
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.featured {
+  border: 2px solid #1DB954;
+}
+.price {
+  color: #1DB954;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+.plan ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+.plan ul li {
+  margin: 0.5rem 0;
+}
+
+.compare {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.compare table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.compare th, .compare td {
+  padding: 1rem;
+  border: 1px solid #333;
+}
+.compare th {
+  background: #1DB954;
+}
+.compare td {
+  text-align: center;
+}
+
+.faq {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+ background: linear-gradient(145deg, #1db954, #191414);
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background-color: #1e1e1e;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1rem;
+  list-style: none;
+}
+
+.faq-item summary span {
+  display: inline-block;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-content {
+  padding: 1rem;
+  border-top: 1px solid #333;
+  background-color: #2a2a2a;
+}
+
+.faq-item .icon::before {
+  content: "⌄";
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 1.2rem;
+}
+
+.faq-item[open] .icon::before {
+  transform: rotate(180deg);
+}
+.compare tbody tr:hover {
+  background-color: #808080;
+  transition: background-color 0.3s ease;
+}
+.site-footer {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 50px 20px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-brand h2 {
+  color: #1db954;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.footer-links h3,
+.footer-support h3,
+.footer-social h3 {
+  color: #1db954;
+  margin-bottom: 15px;
+}
+
+.footer-links ul,
+.footer-support ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-support li,
+.footer-social li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-support a,
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-support a:hover,
+.footer-social a:hover {
+  color: #1db954;
+}
+.footer-social i {
+  margin-left: 8px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.footer-social i:hover {
+  color: #1db954;
+}
+
+ .footer-bottom {
+      text-align: center;
+      padding: 15px;
+      color: #aaa;
+    }
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-social ul {
+    padding-left: 0;
+  }
+
+  .footer-social li {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
